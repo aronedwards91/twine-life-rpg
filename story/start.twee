@@ -1,0 +1,36 @@
+:: StoryData
+{
+    "ifid": "3e6edb7a-35c5-4312-8846-767e4f4f36c8",
+    "format": "SugarCube",
+    "format-version": "2.26.1",
+    "start": "Start"
+}
+
+:: StoryTitle
+Life RPG Starter
+
+:: StoryCaption
+Day: $day
+
+Cash: £$cash
+Strength: $strength
+Intelligence: $intelligence
+Charm: $charm
+
+:: StoryInit
+
+:: Start
+This is the story about generic human A & their life
+
+<<nobr>>
+<<set $day to 1>>
+<<set $cash to 120>>
+<<set $strength to 10>>
+<<set $intelligence to 10>>
+<<set $charm to 10>>
+<</nobr>>
+[[>>>>|Intro2]]
+
+:: Intro2
+More introduction
+
