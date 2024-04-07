@@ -1,0 +1,74 @@
+:: Gym
+basic gym
+<<nobr>>
+<<if $strength > $maxSkillLvl>>
+    <<set $strength to $maxSkillLvl>>
+<</if>>
+<<if $strength < 40 and $gymlevel is 0>>
+[[Workout|Gym - gain strength]]
+<<elseif  $strength >= 40 and $gymlevel is 0>>
+I'm too strong for this small gym
+<</if>>
+
+<<if $strength < 120 and $gymlevel is 1>>
+[[Workout+|Gym - gain strength2]]
+<<elseif  $strength >= 120 and $gymlevel is 1>>
+I'm too strong for this gym
+<</if>>
+
+<<if $strength < $maxSkillLvl and $gymlevel is 2>>
+[[Workout++|Gym - gain strength3]]
+<<elseif  $strength >= $maxSkillLvl and $gymlevel is 2>>
+I have reached peak strength!
+<</if>>
+<</nobr>>
+<<nobr>>
+<<if $cash >= 1200 and $gymlevel is 0>>
+[[Invest in Gym for $1200|Gym - invest1]]
+<<elseif  $cash < 1200 and $gymlevel is 0>>
+I lack the funds to invest in the gym
+<</if>>
+
+<<if $cash >= 2500 and $gymlevel is 1>>
+[[Invest in Gym for $2500|Gym - invest1]]
+<<elseif  $cash < 2500 and $gymlevel is 1>>
+I lack the funds to invest in the gym
+<</if>>
+<</nobr>>
+[[Return to City...|City]]
+
+:: Gym - gain strength
+You have gained strength
+<<set $strength to $strength + 1>>
+[[Return to City...|City]]
+[[Stay in Gym|Gym]]
+
+:: Gym - invest1
+Investing in the gym, the equipment improves
+<<nobr>>
+<<set $gymlevel to 1>>
+<<set $cash to $cash - 1200>>
+<</nobr>>
+[[Return to City...|City]]
+[[Stay in Gym|Gym]]
+
+:: Gym - gain strength2
+You have gained +2 strength
+<<set $strength to $strength + 2>>
+[[Return to City...|City]]
+[[Stay in Gym|Gym]]
+
+:: Gym - invest2
+Investing in the gym, the equipment improves
+<<nobr>>
+<<set $gymlevel to 2>>
+<<set $cash to $cash - 2500>>
+<</nobr>>
+[[Return to City...|City]]
+[[Stay in Gym|Gym]]
+
+:: Gym - gain strength3
+You have gained +5 strength
+<<set $strength to $strength + 5>>
+[[Return to City...|City]]
+[[Stay in Gym|Gym]]

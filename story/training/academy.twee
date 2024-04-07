@@ -1,0 +1,35 @@
+:: Academy
+
+Educational academy
+
+<<nobr>>
+<<if $intelligence > $maxSkillLvl>>
+    <<set $intelligence to $maxSkillLvl>>
+<</if>>
+<<if $intelligence < $maxSkillLvl>>
+[[Learn|Academy - gain intelligence]]
+<<else>>
+I've learned all I can
+<</if>>
+<<if $cash > 49 and $intelligence < $maxSkillLvl>>
+[[Tutoring for $50|Tutor - gain intelligence]]
+<<elseif $intelligence < 301>>
+I lack the funds to be tutored
+<</if>>
+<</nobr>>
+[[Return to City...|City]]
+
+:: Academy - gain intelligence
+You have gained intelligence
+<<set $intelligence to $intelligence + 1>>
+[[Return to City...|City]]
+[[Stay in Academy|Academy]]
+
+:: Tutor - gain intelligence
+You have gained +4 intelligence
+<<nobr>>
+<<set $cash to $cash - 50>>
+<<set $intelligence to $intelligence + 4>>
+<</nobr>>
+[[Return to City...|City]]
+[[Stay in Academy|Academy]]
