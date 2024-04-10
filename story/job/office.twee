@@ -1,0 +1,74 @@
+:: Office
+Fancy office
+
+<<nobr>>
+<<if $officeRank === $officeRanks[1]>>
+    [[Work as Janitor|Work - Janitor]]
+<</if>>
+<</nobr>>
+<<nobr>>
+<<if $officeRank === $officeRanks[0]>>
+    [[Get Job|Hired Janitor]]
+<</if>>
+
+<<if $officeRank === $officeRanks[1] and $intelligence >= 20>>
+    [[Get a Promotion|Hired Intern]]
+<<elseif $officeRank === $officeRanks[1]>>
+    I'll need 20 Intelligence to be promoted
+<</if>>
+
+<<if $officeRank === $officeRanks[2] and $intelligence >= 50 and $charm >= 20>>
+    [[Get a Promotion|Hired Salesperson]]
+<<elseif $officeRank === $officeRanks[2]>>
+    I'll need 20 Charm & 50 Intelligence to be promoted
+<</if>>
+
+
+<<if $officeRank === $officeRanks[5] and $intelligence >= 250 and $charm >= 120>>
+    [[Get a Promotion|Hired CEO]]
+<<elseif $officeRank === $officeRanks[2]>>
+    I'll need 20 Charm & 50 Intelligence to be promoted
+<</if>>
+<</nobr>>
+
+:: Work - Janitor
+You work cleaning the office, earn $40
+<<set $cash to $cash + 40>>
+[[Return to City...|City]]
+[[Stay in Office|Office]]
+
+:: Hired Janitor
+Congrats you've been hired as a Janitor
+<<set $officeRank to $officeRanks[1]>>
+[[Return to City...|City]]
+[[Stay in Office|Office]]
+
+:: Hired Intern
+Congrats you've promoted to Intern
+<<set $officeRank to $officeRanks[2]>>
+[[Return to City...|City]]
+[[Stay in Office|Office]]
+
+:: Hired Salesperson
+Congrats you've promoted to Salesperson
+<<set $officeRank to $officeRanks[3]>>
+[[Return to City...|City]]
+[[Stay in Office|Office]]
+
+:: Hired Chief of Sales
+Congrats you've promoted to Chief of Sales
+<<set $officeRank to $officeRanks[4]>>
+[[Return to City...|City]]
+[[Stay in Office|Office]]
+
+:: Hired Department Manager
+Congrats you've promoted to Department Manager
+<<set $officeRank to $officeRanks[5]>>
+[[Return to City...|City]]
+[[Stay in Office|Office]]
+
+:: Hired CEO
+Congrats you've promoted to CEO
+<<set $officeRank to $officeRanks[6]>>
+[[Return to City...|City]]
+[[Stay in Office|Office]]

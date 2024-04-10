@@ -12,10 +12,12 @@ Life RPG Starter
 :: StoryCaption
 Day: $day
 
-Cash: £$cash
+Cash: """$"""$cash
 Strength: $strength
 Intelligence: $intelligence
 Charm: $charm
+
+Job: $officeRank
 
 :: StoryInit
 
@@ -24,13 +26,18 @@ This is the story about a generic human & their life
 
 <<nobr>>
 <<set $day to 1>>
-<<set $cash to 6000>>
-<<set $strength to 10>>
-<<set $intelligence to 10>>
-<<set $charm to 298>>
+<<set $cash to 120>>
+
+<<set $strength to 100>>
+<<set $intelligence to 100>>
+<<set $charm to 100>>
 <<set $maxSkillLvl to 300>>
+
 <<set $gymlevel to 0>>
 <<set $havePlayScript to false>>
+
+<<set $officeRanks to ["none", "Janitor", "Intern", "Salesperson", "Chief of Sales", "Department Manager", "CEO"]>>
+<<set $officeRank to $officeRanks[0]>>
 <</nobr>>
 [[>>>>|Intro2]]
 
