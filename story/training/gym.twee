@@ -35,12 +35,12 @@ I lack the funds to invest in the gym
 I lack the funds to invest in the gym
 <</if>>
 <</nobr>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 
 :: Gym - gain strength
 You have gained strength
 <<set $strength to $strength + 1>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 [[Stay in Gym|Gym]]
 
 :: Gym - invest1
@@ -49,13 +49,13 @@ Investing in the gym, the equipment improves
 <<set $gymlevel to 1>>
 <<set $cash to $cash - 1200>>
 <</nobr>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 [[Stay in Gym|Gym]]
 
 :: Gym - gain strength2
 You have gained +2 strength
 <<set $strength to $strength + 2>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 [[Stay in Gym|Gym]]
 
 :: Gym - invest2
@@ -64,11 +64,11 @@ Investing in the gym, the equipment improves
 <<set $gymlevel to 2>>
 <<set $cash to $cash - 2500>>
 <</nobr>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 [[Stay in Gym|Gym]]
 
 :: Gym - gain strength3
 You have gained +5 strength
 <<set $strength to $strength + 5>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 [[Stay in Gym|Gym]]

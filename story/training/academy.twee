@@ -17,12 +17,12 @@ I've learned all I can
 I lack the funds to be tutored
 <</if>>
 <</nobr>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 
 :: Academy - gain intelligence
 You have gained intelligence
 <<set $intelligence to $intelligence + 1>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 [[Stay in Academy|Academy]]
 
 :: Tutor - gain intelligence
@@ -31,5 +31,5 @@ You have gained +4 intelligence
 <<set $cash to $cash - 50>>
 <<set $intelligence to $intelligence + 4>>
 <</nobr>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 [[Stay in Academy|Academy]]

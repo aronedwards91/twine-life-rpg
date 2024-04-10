@@ -29,12 +29,12 @@ If I had a script we could put on a play...
 I lack the $800 funds to purchase a script
 <</if>>
 <</nobr>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 
 :: Theatre - gain charm
 You have gained charm
 <<set $charm to $charm + 1>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 [[Stay in Theatre|Theatre]]
 
 :: Play - buy script
@@ -43,7 +43,7 @@ You can now put on a play
 <<set $havePlayScript to true>>
 <<set $cash to $cash - 800>>
 <</nobr>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 [[Stay in Theatre|Theatre]]
 
 :: Play - hold play
@@ -52,5 +52,5 @@ You hold a play, impressing the crowd, charm grows by 5
 <<set $charm to $charm + 5>>
 <<set $cash to $cash - 20>>
 <</nobr>>
-[[Return to City...|City]]
+[[Return toCity|City]]
 [[Stay in Theatre|Theatre]]
