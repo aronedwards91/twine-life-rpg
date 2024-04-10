@@ -5,6 +5,7 @@ My Home
 [[Go to City|City]]
 
 :: Sleep
-You get a good night's sleep
-
+You get a good night's sleep, you oversleep by <<print $oversleepHours>> hours
+<<set $hours to 18 - $oversleepHours>>
+<<set $day to $day + 1 >>
 [[Wake up|Home]]

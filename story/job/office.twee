@@ -2,9 +2,28 @@
 Fancy office
 
 <<nobr>>
-<<if $officeRank === $officeRanks[1]>>
-    [[Work as Janitor|Work - Janitor]]
-<</if>>
+    <<if $hours < 4>>
+        I lack the energy for any more shifts today
+    <</if>>
+
+    <<if $officeRank === $officeRanks[1] and $hours >= 4>>
+        [[Work as Janitor|Work - Janitor]]
+    <</if>>
+    <<if $officeRank === $officeRanks[2] and $hours >= 4>>
+        [[Work as Janitor|Work - Intern]]
+    <</if>>
+    <<if $officeRank === $officeRanks[3] and $hours >= 4>>
+        [[Work as Janitor|Work - Salesperson]]
+    <</if>>
+    <<if $officeRank === $officeRanks[4] and $hours >= 4>>
+        [[Work as Janitor|Work - Chief of Sales]]
+    <</if>>
+    <<if $officeRank === $officeRanks[5] and $hours >= 4>>
+        [[Work as Janitor|Work - Department Manager]]
+    <</if>>
+    <<if $officeRank === $officeRanks[6] and $hours >= 4>>
+        [[Work as Janitor|Work - CEO]]
+    <</if>>
 <</nobr>>
 <<nobr>>
 <<if $officeRank === $officeRanks[0]>>
@@ -30,45 +49,94 @@ Fancy office
     I'll need 20 Charm & 50 Intelligence to be promoted
 <</if>>
 <</nobr>>
+[[Return to City|City]]
 
 :: Work - Janitor
-You work cleaning the office, earn $40
-<<set $cash to $cash + 40>>
-[[Return toCity|City]]
+You work cleaning the office, earn $40 @ $10/h
+<<nobr>>
+    <<set $cash to $cash + 40>>
+    <<set $hours to $hours - 4>>
+<</nobr>>
+[[Return to City|City]]
+[[Stay in Office|Office]]
+
+:: Work - Intern
+You work as an office intern/coffee fetcher, earn $60 @ $15/h
+<<nobr>>
+    <<set $cash to $cash + 60>>
+    <<set $hours to $hours - 4>>
+<</nobr>>
+[[Return to City|City]]
+[[Stay in Office|Office]]
+
+:: Work - Salesperson
+You work selling software, earn $100 @ $25/h
+<<nobr>>
+    <<set $cash to $cash + 100>>
+    <<set $hours to $hours - 4>>
+<</nobr>>
+[[Return to City|City]]
+[[Stay in Office|Office]]
+
+:: Work - Chief of Sales
+You work managing and helping the sales team, earn $200 @ $50/h
+<<nobr>>
+    <<set $cash to $cash + 200>>
+    <<set $hours to $hours - 4>>
+<</nobr>>
+[[Return to City|City]]
+[[Stay in Office|Office]]
+
+:: Work - Department Manager
+You manage the entire sales department, earn $340 @ $85/h
+<<nobr>>
+    <<set $cash to $cash + 340>>
+    <<set $hours to $hours - 4>>
+<</nobr>>
+[[Return to City|City]]
+[[Stay in Office|Office]]
+
+:: Work - CEO
+You manage the company, earn $600 @ $150/h
+<<nobr>>
+    <<set $cash to $cash + 600>>
+    <<set $hours to $hours - 4>>
+<</nobr>>
+[[Return to City|City]]
 [[Stay in Office|Office]]
 
 :: Hired Janitor
-Congrats you've been hired as a Janitor
+Congrats you've been hired as a Janitor earning $10/h
 <<set $officeRank to $officeRanks[1]>>
-[[Return toCity|City]]
+[[Return to City|City]]
 [[Stay in Office|Office]]
 
 :: Hired Intern
-Congrats you've promoted to Intern
+Congrats you've promoted to Intern earning $15/h
 <<set $officeRank to $officeRanks[2]>>
-[[Return toCity|City]]
+[[Return to City|City]]
 [[Stay in Office|Office]]
 
 :: Hired Salesperson
-Congrats you've promoted to Salesperson
+Congrats you've promoted to Salesperson earning $25/h
 <<set $officeRank to $officeRanks[3]>>
-[[Return toCity|City]]
+[[Return to City|City]]
 [[Stay in Office|Office]]
 
 :: Hired Chief of Sales
-Congrats you've promoted to Chief of Sales
+Congrats you've promoted to Chief of Sales earning $50/h
 <<set $officeRank to $officeRanks[4]>>
-[[Return toCity|City]]
+[[Return to City|City]]
 [[Stay in Office|Office]]
 
 :: Hired Department Manager
-Congrats you've promoted to Department Manager
+Congrats you've promoted to Department Manager earning $85/h
 <<set $officeRank to $officeRanks[5]>>
-[[Return toCity|City]]
+[[Return to City|City]]
 [[Stay in Office|Office]]
 
 :: Hired CEO
-Congrats you've promoted to CEO
+Congrats you've promoted to CEO earning $150/h
 <<set $officeRank to $officeRanks[6]>>
-[[Return toCity|City]]
+[[Return to City|City]]
 [[Stay in Office|Office]]

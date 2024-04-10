@@ -16,6 +16,8 @@ Cash: """$"""$cash
 Strength: $strength
 Intelligence: $intelligence
 Charm: $charm
+/* 4 is 4am, 18 is total available hours with all oversleep improvements */
+Time: <<print 4 + 18 - $hours>>:00 (💤@22:00)
 
 Job: $officeRank
 
@@ -28,9 +30,9 @@ This is the story about a generic human & their life
 <<set $day to 1>>
 <<set $cash to 120>>
 
-<<set $strength to 100>>
-<<set $intelligence to 100>>
-<<set $charm to 100>>
+<<set $strength to 10>>
+<<set $intelligence to 10>>
+<<set $charm to 10>>
 <<set $maxSkillLvl to 300>>
 
 <<set $gymlevel to 0>>
@@ -38,6 +40,9 @@ This is the story about a generic human & their life
 
 <<set $officeRanks to ["none", "Janitor", "Intern", "Salesperson", "Chief of Sales", "Department Manager", "CEO"]>>
 <<set $officeRank to $officeRanks[0]>>
+
+<<set $hours to 10>>
+<<set $oversleepHours to 8>>
 <</nobr>>
 [[>>>>|Intro2]]
 

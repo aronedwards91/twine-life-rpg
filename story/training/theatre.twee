@@ -2,55 +2,62 @@
 Basic Theatre
 
 <<nobr>>
-<<if $charm > $maxSkillLvl>>
-    <<set $charm to $maxSkillLvl>>
-<</if>>
-<<if $charm < 100>>
-[[Practice acting|Theatre - gain charm]]
-<<else>>
-I'm past basic practice
-<</if>>
+    <<if $charm > $maxSkillLvl>>
+        <<set $charm to $maxSkillLvl>>
+    <</if>>
+    <<if $hours < 1>>
+        I lack the energy for any more theatre work today
+    <</if>>
+    <<if $charm < 100 and $hours >= 1>>
+        [[Practice acting|Theatre - gain charm]]
+    <<else>>
+        I'm past basic practice
+    <</if>>
 <</nobr>>
 <<nobr>>
-<<if $cash >= 20 and $havePlayScript is true && $charm < $maxSkillLvl>>
-[[Hold play, costs $20|Play - hold play]]
-<<elseif $cash < 20 and $havePlayScript is true >>
-I need some basic funds to setup a play
-<<elseif $charm >= $maxSkillLvl and $havePlayScript is true >>
-My skills in charm have peaked
-<<else>>
-If I had a script we could put on a play...
-<</if>>
+    <<if $cash >= 20 and $havePlayScript is true && $charm < $maxSkillLvl and $hours >= 1>>
+        [[Hold play, costs $20|Play - hold play]]
+    <<elseif $cash < 20 and $havePlayScript is true >>
+        I need some basic funds to setup a play
+    <<elseif $charm >= $maxSkillLvl and $havePlayScript is true >>
+        My skills in charm have peaked
+    <<else>>
+         If I had a script we could put on a play...
+    <</if>>
 <</nobr>>
 <<nobr>>
-<<if $cash >= 800 and $havePlayScript is false>>
-[[Purchase script for $800|Play - buy script]]
-<<elseif  $cash < 800 and $havePlayScript is false>>
-I lack the $800 funds to purchase a script
-<</if>>
+    <<if $cash >= 800 and $havePlayScript is false>>
+        [[Purchase script for $800|Play - buy script]]
+    <<elseif  $cash < 800 and $havePlayScript is false>>
+        I lack the $800 funds to purchase a script
+    <</if>>
 <</nobr>>
-[[Return toCity|City]]
+[[Return to City|City]]
 
 :: Theatre - gain charm
 You have gained charm
-<<set $charm to $charm + 1>>
-[[Return toCity|City]]
+<<nobr>>
+    <<set $charm to $charm + 1>>
+    <<set $hours to $hours - 1>>
+<</nobr>>
+[[Return to City|City]]
 [[Stay in Theatre|Theatre]]
 
 :: Play - buy script
 You can now put on a play
 <<nobr>>
-<<set $havePlayScript to true>>
-<<set $cash to $cash - 800>>
+    <<set $havePlayScript to true>>
+    <<set $cash to $cash - 800>>
 <</nobr>>
-[[Return toCity|City]]
+[[Return to City|City]]
 [[Stay in Theatre|Theatre]]
 
 :: Play - hold play
 You hold a play, impressing the crowd, charm grows by 5
-<<nobr>>
-<<set $charm to $charm + 5>>
-<<set $cash to $cash - 20>>
+    <<nobr>>
+    <<set $charm to $charm + 5>>
+    <<set $cash to $cash - 20>>
+    <<set $hours to $hours - 1>>
 <</nobr>>
-[[Return toCity|City]]
+[[Return to City|City]]
 [[Stay in Theatre|Theatre]]
