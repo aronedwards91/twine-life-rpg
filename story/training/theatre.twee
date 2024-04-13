@@ -1,4 +1,4 @@
-:: Theatre
+:: Theatre [bg-theatre]
 Basic Theatre
 
 <<nobr>>
@@ -34,7 +34,7 @@ Basic Theatre
 <</nobr>>
 [[Return to City|City]]
 
-:: Theatre - gain charm
+:: Theatre - gain charm [bg-theatre]
 You have gained charm
 <<nobr>>
     <<set $charm to $charm + 1>>
@@ -43,7 +43,7 @@ You have gained charm
 [[Return to City|City]]
 [[Stay in Theatre|Theatre]]
 
-:: Play - buy script
+:: Play - buy script [bg-theatre]
 You can now put on a play
 <<nobr>>
     <<set $havePlayScript to true>>
@@ -52,7 +52,7 @@ You can now put on a play
 [[Return to City|City]]
 [[Stay in Theatre|Theatre]]
 
-:: Play - hold play
+:: Play - hold play [bg-theatre]
 You hold a play, impressing the crowd, charm grows by 5
     <<nobr>>
     <<set $charm to $charm + 5>>

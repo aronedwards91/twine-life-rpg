@@ -1,0 +1,27 @@
+:: BG[stylesheet]
+
+body {
+  z-index: -100;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body[data-tags~="bg-city"] {
+  background-image: url("./media/images/bg/city.webp");
+}
+body[data-tags~="bg-bedroom"] {
+  background-image: url("./media/images/bg/bedroom.webp");
+}
+body[data-tags~="bg-gym"] {
+  background-image: url("./media/images/bg/gym.webp");
+}
+body[data-tags~="bg-office"] {
+  background-image: url("./media/images/bg/office.webp");
+}
+body[data-tags~="bg-school"] {
+  background-image: url("./media/images/bg/school.webp");
+}
+body[data-tags~="bg-theatre"] {
+  background-image: url("./media/images/bg/theatre.webp");
+}

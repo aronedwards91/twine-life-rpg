@@ -23,7 +23,7 @@ Job: $officeRank
 
 :: StoryInit
 
-:: Start
+:: Start [bg-city]
 This is the story about a generic human & their life
 
 <<nobr>>
@@ -46,7 +46,7 @@ This is the story about a generic human & their life
 <</nobr>>
 [[>>>>|Intro2]]
 
-:: Intro2
+:: Intro2 [bg-city]
 More introduction
 
 [[Visit City|City]]

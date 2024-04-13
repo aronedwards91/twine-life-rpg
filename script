@@ -1,4 +1,0 @@
->build
-C:\Apps\tweego\tweego.exe -o build\example.html story
->bash build
-C:/Apps/tweego/tweego.exe -o build/example.html story

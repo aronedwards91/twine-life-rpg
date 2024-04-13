@@ -1,4 +1,4 @@
-:: Office
+:: Office [bg-office]
 Fancy office
 
 <<nobr>>
@@ -51,7 +51,7 @@ Fancy office
 <</nobr>>
 [[Return to City|City]]
 
-:: Work - Janitor
+:: Work - Janitor [bg-office]
 You work cleaning the office, earn $40 @ $10/h
 <<nobr>>
     <<set $cash to $cash + 40>>
@@ -60,7 +60,7 @@ You work cleaning the office, earn $40 @ $10/h
 [[Return to City|City]]
 [[Stay in Office|Office]]
 
-:: Work - Intern
+:: Work - Intern [bg-office]
 You work as an office intern/coffee fetcher, earn $60 @ $15/h
 <<nobr>>
     <<set $cash to $cash + 60>>
@@ -69,7 +69,7 @@ You work as an office intern/coffee fetcher, earn $60 @ $15/h
 [[Return to City|City]]
 [[Stay in Office|Office]]
 
-:: Work - Salesperson
+:: Work - Salesperson [bg-office]
 You work selling software, earn $100 @ $25/h
 <<nobr>>
     <<set $cash to $cash + 100>>
@@ -78,7 +78,7 @@ You work selling software, earn $100 @ $25/h
 [[Return to City|City]]
 [[Stay in Office|Office]]
 
-:: Work - Chief of Sales
+:: Work - Chief of Sales [bg-office]
 You work managing and helping the sales team, earn $200 @ $50/h
 <<nobr>>
     <<set $cash to $cash + 200>>
@@ -87,7 +87,7 @@ You work managing and helping the sales team, earn $200 @ $50/h
 [[Return to City|City]]
 [[Stay in Office|Office]]
 
-:: Work - Department Manager
+:: Work - Department Manager [bg-office]
 You manage the entire sales department, earn $340 @ $85/h
 <<nobr>>
     <<set $cash to $cash + 340>>
@@ -96,7 +96,7 @@ You manage the entire sales department, earn $340 @ $85/h
 [[Return to City|City]]
 [[Stay in Office|Office]]
 
-:: Work - CEO
+:: Work - CEO [bg-office]
 You manage the company, earn $600 @ $150/h
 <<nobr>>
     <<set $cash to $cash + 600>>
@@ -105,37 +105,37 @@ You manage the company, earn $600 @ $150/h
 [[Return to City|City]]
 [[Stay in Office|Office]]
 
-:: Hired Janitor
+:: Hired Janitor [bg-office]
 Congrats you've been hired as a Janitor earning $10/h
 <<set $officeRank to $officeRanks[1]>>
 [[Return to City|City]]
 [[Stay in Office|Office]]
 
-:: Hired Intern
+:: Hired Intern [bg-office]
 Congrats you've promoted to Intern earning $15/h
 <<set $officeRank to $officeRanks[2]>>
 [[Return to City|City]]
 [[Stay in Office|Office]]
 
-:: Hired Salesperson
+:: Hired Salesperson [bg-office]
 Congrats you've promoted to Salesperson earning $25/h
 <<set $officeRank to $officeRanks[3]>>
 [[Return to City|City]]
 [[Stay in Office|Office]]
 
-:: Hired Chief of Sales
+:: Hired Chief of Sales [bg-office]
 Congrats you've promoted to Chief of Sales earning $50/h
 <<set $officeRank to $officeRanks[4]>>
 [[Return to City|City]]
 [[Stay in Office|Office]]
 
-:: Hired Department Manager
+:: Hired Department Manager [bg-office]
 Congrats you've promoted to Department Manager earning $85/h
 <<set $officeRank to $officeRanks[5]>>
 [[Return to City|City]]
 [[Stay in Office|Office]]
 
-:: Hired CEO
+:: Hired CEO [bg-office]
 Congrats you've promoted to CEO earning $150/h
 <<set $officeRank to $officeRanks[6]>>
 [[Return to City|City]]
