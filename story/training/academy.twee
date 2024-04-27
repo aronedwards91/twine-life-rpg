@@ -1,4 +1,4 @@
-:: Academy [bg-school]
+:: Academy [bg-school player ltalk npc-school]
 
 Educational academy
 
@@ -22,7 +22,7 @@ Educational academy
 <</nobr>>
 [[Return to City|City]]
 
-:: Academy - gain intelligence [bg-school]
+:: Academy - gain intelligence [bg-school player ltalk npc-school]
 You have gained intelligence
 <<nobr>>
     <<set $intelligence to $intelligence + 2>>
@@ -31,7 +31,8 @@ You have gained intelligence
 [[Return to City|City]]
 [[Stay in Academy|Academy]]
 
-:: Tutor - gain intelligence [bg-school]
+:: Tutor - gain intelligence [bg-school player rtalk npc-school]
+congrats player, you're really picking this up!
 You have gained +4 intelligence
 <<nobr>>
     <<set $cash to $cash - 50>>
