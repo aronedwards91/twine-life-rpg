@@ -33,22 +33,22 @@ body {
   z-index 10;
   overflow-y: auto;
 }
-#passages:first-child::-webkit-scrollbar {
+#passages::-webkit-scrollbar {
   width: 20px;
 }
 
-#passages:first-child::-webkit-scrollbar-track {
+#passages::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-#passages:first-child::-webkit-scrollbar-thumb {
+#passages::-webkit-scrollbar-thumb {
   background-color: #d6dee1;
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
 }
 
-#passages:first-child::-webkit-scrollbar-thumb:hover {
+#passages::-webkit-scrollbar-thumb:hover {
   background-color: #a8bbbf;
 }
 
