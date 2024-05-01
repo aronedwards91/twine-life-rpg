@@ -25,13 +25,14 @@ body {
   width: fill-available;
   border: 0.25rem solid #253969;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 0.75rem;
   background: hsl(222.35deg 14.17% 47.06% / 70%);
   margin-bottom: 2rem;
   max-height: 14rem;
   position: relative;
   z-index 10;
   overflow-y: auto;
+  font-size: 14px;
 }
 #passages::-webkit-scrollbar {
   width: 20px;

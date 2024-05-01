@@ -27,7 +27,7 @@ Job: $officeRank
     $( "#story" ).prepend( "<div class='img-row'><div class='img1'></div><div class='img2'></div><div class='img3'></div></div>" );
 <</script>>
 
-:: Start [bg-city player-mid mtalk]
+:: Start [bg-city player-mid mid-char mtalk]
 This is the story about a generic human & their life
 
 <<nobr>>
@@ -50,7 +50,7 @@ This is the story about a generic human & their life
 <</nobr>>
 [[>>>>|Intro2]]
 
-:: Intro2 [bg-city player-mid mtalk]
+:: Intro2 [bg-city player-mid mtalk mid-char]
 More introduction
 
 [[Visit City|City]]

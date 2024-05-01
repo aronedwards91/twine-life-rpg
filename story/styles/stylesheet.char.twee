@@ -1,7 +1,7 @@
 :: Char[stylesheet]
 
 .img-row {
-  flex: 1 1 100%;
+  flex: 1 1 60%;
   display: flex;
   justify-content: space-between;
   padding: 2rem 2rem 0rem;
@@ -22,20 +22,19 @@
   opacity: 85%
 }
 .img2 {
-  flex: 5 1 5rem;
+  flex: 3 1 20%;
 }
 .img1, .img3 {
-  flex: 1 1 18rem;
+  flex: 1 1 40%;
 }
-body[data-tags~="lc"] .img1 {
-  flex: 4 1 18rem;
+body[data-tags~="mid-char"] .img2 {
+  flex: 4 1 50%;
 }
-body[data-tags~="rc"] .img3 {
-  flex: 4 1 18rem;
+body[data-tags~="mid-char"] .img1, .img3 {
+  flex: 1 1 25%;
 }
-body[data-tags~="both"] .img1,
-body[data-tags~="both"] .img3 {
-  flex: 4 1 18rem;
+body[data-tags~="trio-char"] .img1, .img2, .img3 {
+  flex: 1 1 33.3%;
 }
 body[data-tags~="ltalk"] .img1,
 body[data-tags~="mtalk"] .img2,
