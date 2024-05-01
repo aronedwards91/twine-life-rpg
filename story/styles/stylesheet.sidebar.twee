@@ -1,0 +1,18 @@
+:: Sidebar[stylesheet]
+
+#ui-bar {
+  background: rgb(73,99,167);
+  background: linear-gradient(348deg, rgba(73,99,167,1) 0%, rgba(22,22,82,1) 26%, rgba(25,6,45,1) 49%, rgba(74,7,87,1) 70%, rgba(199,38,213,1) 100%);
+}
+#ui-bar button {
+  background: rgb(30,54,117);
+  background: linear-gradient(348deg, rgba(30,54,117,1) 0%, rgba(161,22,173,1) 100%);
+  border: 2px solid white;
+  border-radius: 0.5rem;
+}
+ul#menu-core {
+    border:none;
+}
+#menu-core a:hover {
+  background: linear-gradient(348deg, rgba(30,54,117,1) 0%, rgba(161,22,173,1) 100%);
+}
