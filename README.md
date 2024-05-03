@@ -10,6 +10,7 @@ The goal of this project is to make a simple example/starter for twee.
 
 Twee - is a code based version of twine (https://twinery.org/), a super user friendly, no code, option for interactive fiction, this app is a starter for Twee/tweego (https://www.motoslave.net/tweego/) which allows you to write it out via a more code/file based manner, and then compile the result into a playable HTML.
 
+The game itself is a mini-homage to the classic webgame [Stick RPG](http://www.xgenstudios.com/play/stickrpg)
 
 ## - Why
 
