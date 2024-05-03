@@ -48,3 +48,12 @@ It comes with 100GB monthly bandwidth, so it's rather generous.
 ## Help
 
 Requires a build folder to exist for script to work
+
+
+### Extra Tools
+
+#### VSCode
+
+**Install Twee 3 Language Tools** it's a must, this not only adds code styling, but allows you to open a story map so you can see how the sections come together:
+
+![Story Map](twee-map-example.PNG)
