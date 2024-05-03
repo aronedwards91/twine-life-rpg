@@ -1,4 +1,4 @@
-:: StoryData
+:: StoryData {"position":"650,0"}
 {
     "ifid": "3e6edb7a-35c5-4312-8846-767e4f4f36c8",
     "format": "SugarCube",
@@ -6,10 +6,10 @@
     "start": "Start"
 }
 
-:: StoryTitle
+:: StoryTitle {"position":"550,0"}
 Life RPG Starter
 
-:: StoryCaption
+:: StoryCaption {"position":"350,0"}
 Day: $day
 
 Cash: """$"""$cash
@@ -21,13 +21,13 @@ Time: <<print 4 + 18 - $hours>>:00 (💤@22:00)
 
 Job: $officeRank
 
-:: StoryInit
+:: StoryInit {"position":"450,0"}
 <<script>>
 	/* pure JavaScript code */
     $( "#story" ).prepend( "<div class='img-row'><div class='img1'></div><div class='img2'></div><div class='img3'></div></div>" );
 <</script>>
 
-:: Start [bg-city player-mid mid-char mtalk]
+:: Start [bg-city player-mid mid-char mtalk] {"position":"350,150"}
 This is the story about a generic human & their life
 
 <<nobr>>
@@ -50,7 +50,7 @@ This is the story about a generic human & their life
 <</nobr>>
 [[>>>>|Intro2]]
 
-:: Intro2 [bg-city player-mid mtalk mid-char]
+:: Intro2 [bg-city player-mid mtalk mid-char] {"position":"550,200"}
 More introduction
 
 [[Visit City|City]]

@@ -1,4 +1,4 @@
-:: Gym [bg-gym player ltalk npc-gym]
+:: Gym [bg-gym player ltalk npc-gym] {"position":"225,450","size":"200,100"}
 basic gym
 <<nobr>>
     <<if $strength > $maxSkillLvl>>
@@ -40,7 +40,7 @@ basic gym
 <</nobr>>
 [[Return to City|City]]
 
-:: Gym - gain strength [bg-gym player rtalk npc-gym]
+:: Gym - gain strength [bg-gym player rtalk npc-gym] {"position":"475,625"}
 nice gains bro
 You have gained strength
 <<nobr>>
@@ -50,7 +50,7 @@ You have gained strength
 [[Return to City|City]]
 [[Stay in Gym|Gym]]
 
-:: Gym - invest1 [bg-gym player ltalk npc-gym]
+:: Gym - invest1 [bg-gym player ltalk npc-gym] {"position":"0,700"}
 Investing in the gym, the equipment improves
 <<nobr>>
     <<set $gymlevel to 1>>
@@ -59,7 +59,7 @@ Investing in the gym, the equipment improves
 [[Return to City|City]]
 [[Stay in Gym|Gym]]
 
-:: Gym - gain strength2 [bg-gym player rtalk npc-gym]
+:: Gym - gain strength2 [bg-gym player rtalk npc-gym] {"position":"300,900"}
 sweet sesh man
 You have gained +2 strength
 <<nobr>>
@@ -69,7 +69,7 @@ You have gained +2 strength
 [[Return to City|City]]
 [[Stay in Gym|Gym]]
 
-:: Gym - invest2 [bg-gym player ltalk npc-gym]
+:: Gym - invest2 [bg-gym player ltalk npc-gym] {"position":"125,825"}
 Investing in the gym, the equipment improves
 <<nobr>>
     <<set $gymlevel to 2>>
@@ -78,7 +78,7 @@ Investing in the gym, the equipment improves
 [[Return to City|City]]
 [[Stay in Gym|Gym]]
 
-:: Gym - gain strength3 [bg-gym player rtalk npc-gym]
+:: Gym - gain strength3 [bg-gym player rtalk npc-gym] {"position":"400,750"}
 nice guns my brother!
 You have gained +5 strength
 <<nobr>>

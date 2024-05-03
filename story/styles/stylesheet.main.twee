@@ -1,4 +1,4 @@
-:: Main[stylesheet]
+:: Main [stylesheet] {"position":"950,0"}
 
 html {
     height: 100vh;

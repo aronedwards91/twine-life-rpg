@@ -1,10 +1,10 @@
-:: Home [bg-bedroom player ltalk]
+:: Home [bg-bedroom player ltalk] {"position":"2025,200"}
 My Home
 
 [[Go to Sleep|Sleep]]
 [[Go to City|City]]
 
-:: Sleep [bg-bedroom player ltalk]
+:: Sleep [bg-bedroom player ltalk] {"position":"2200,100"}
 You get a good night's sleep, you oversleep by <<print $oversleepHours>> hours
 <<set $hours to 18 - $oversleepHours>>
 <<set $day to $day + 1 >>

@@ -1,4 +1,4 @@
-:: AAFont[stylesheet]
+:: AAFont [stylesheet] {"position":"825,0"}
 /* AA is used to ensure first font loaded, required for CSS import */
 @import url('https://fonts.googleapis.com/css?family=Anta&display=swapo');
 

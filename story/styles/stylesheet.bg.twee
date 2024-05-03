@@ -1,4 +1,4 @@
-:: BG[stylesheet]
+:: BG [stylesheet] {"position":"1075,0"}
 
 body {
   z-index: -100;

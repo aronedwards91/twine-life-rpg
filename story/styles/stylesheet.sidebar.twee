@@ -1,4 +1,4 @@
-:: Sidebar[stylesheet]
+:: Sidebar [stylesheet] {"position":"1325,0"}
 
 #ui-bar {
   background: rgb(73,99,167);
