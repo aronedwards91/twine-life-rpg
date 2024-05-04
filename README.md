@@ -52,6 +52,7 @@ It comes with 100GB monthly bandwidth, so it's rather generous.
 
 Requires a build folder to exist for script to work
 
+[user guide](GUIDE.md)
 
 ### Extra Tools
 
